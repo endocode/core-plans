@@ -1,0 +1,5 @@
+#!/bin/sh
+cd {{pkg.svc_path}}
+export ETCD_NAME="{{cfg.etcd-name}}"
+export ETCD_DATA_DIR="{{cfg.etcd-data-dir}}"
+exec etcd 2>&1
